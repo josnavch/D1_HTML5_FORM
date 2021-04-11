@@ -1,0 +1,33 @@
+body {
+    background: white;
+}
+
+.container {
+  max-width: 960px;
+}
+.Paid{
+    font-size: 2rem;
+}
+.box{
+    border-style: solid;
+    border-width: thin;
+    border-radius: .25rem;
+    border-color: #cecbcb;
+    background-color: #f3f2f2f7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.data_box{
+    border-style: solid;
+    border-width: thin;
+    border-radius: .25rem;
+    border-color: #cecbcb;
+}
+
+.title_box{
+    border-style: solid;
+    border-width: thin;
+    border-radius: .25rem;
+    border-color: #cecbcb;
+    background-color: #f3f2f2f7;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Font-Awesome Icon Library    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <title>HTML5 Form</title>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <div class="row title_box">
+                    <h2 class="mb-3">Payment</h4>
+                </div>
+                <form class="needs-validation" novalidate="">
+                    <div class="row data_box">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback"> Credit card number is required </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvc">CVC #</label>
+                                <input type="text" class="form-control" id="cc-cvc" placeholder="MM/YY" required="">
+                                <div class="invalid-feedback"> Credit card CVC is required </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-amount">Amount</label>
+                                <input type="text" class="form-control" id="cc-amount" placeholder="$ 0.00" required="">
+                                <div class="invalid-feedback"> Amount is required </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback"> Valid first name is required. </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback"> Valid last name is required. </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="country">Country</label>
+                                <select class="custom-select form-control" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>Costa Rica</option>
+                                </select>
+                                <div class="invalid-feedback"> Please select a valid country. </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state">State</label>
+                                <select class="custom-select form-control id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>Alajuela</option>
+                                    <option>Cartago</option>
+                                    <option>Heredia</option>
+                                    <option>Guanacaste</option>
+                                    <option>Limón</option>
+                                    <option>San José</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="Postal">Postal code</label>
+                                <input type="text" class="form-control" id="postal" placeholder="" required="">
+                                <div class="invalid-feedback"> Postal code required. </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h4 class="mb-3">We accept</h4>
+                                <div class="custom-control custom-radio fab fa-cc-mastercard Paid">
+                                    <input id="mastercard" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                </div>
+                                <div class="custom-control custom-radio fab fa-cc-visa Paid" >
+                                    <input id="visa" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                </div>
+                                <div class="custom-control custom-radio fab fa-cc-diners-club Paid">
+                                    <input id="amex" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                    
+                                </div>
+                                <div class="custom-control custom-radio fab fa-cc-amex Paid">
+                                    <input id="diners" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="message">Message</label>
+                                <textarea name="message" class="form-control" id="message" placeholder="" rows="5" cols="30">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-md-end">
+                         <div class="d-grid gap-2 d-md-flex justify-content-md-end box">
+                            <button class="btn btn-secondary" type="button">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Send</button>
+                         </div>
+                    </div>
+                </form>
+                
+                <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">© 2021 Made by Jose Navarrete</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
